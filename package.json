@@ -4,6 +4,7 @@
   "description": "Server code for expense tracking app, MWTS",
   "main": "index.js",
   "scripts": {
+    "s": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

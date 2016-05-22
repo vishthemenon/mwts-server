@@ -1,0 +1,41 @@
+2016-05-22T14:47:55.698546000 0.338486s notice: Recursively removing directory /Users/batnu/Documents/Personal Projects/MWTS/mwts-server/rethinkdb_data/tmp
+2016-05-22T14:47:55.700516000 0.340459s notice: Initializing directory /Users/batnu/Documents/Personal Projects/MWTS/mwts-server/rethinkdb_data
+2016-05-22T14:47:55.700611000 0.340550s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/batnu/Documents/Personal Projects/MWTS/mwts-server/rethinkdb_data' did not already exist or is empty.)
+2016-05-22T14:47:55.700643000 0.340582s notice: Running rethinkdb 2.3.1 (CLANG 7.3.0 (clang-703.0.29))...
+2016-05-22T14:47:55.705462000 0.345403s notice: Running on Darwin 15.4.0 x86_64
+2016-05-22T14:47:55.705520000 0.345459s notice: Loading data from directory /Users/batnu/Documents/Personal Projects/MWTS/mwts-server/rethinkdb_data
+2016-05-22T14:47:55.846253000 0.486193s info: Automatically using cache size of 100 MB
+2016-05-22T14:47:55.846276000 0.486215s warn: Cache size does not leave much memory for server and query overhead (available memory: 1076 MB).
+2016-05-22T14:47:55.846283000 0.486222s warn: Cache size is very low and may impact performance.
+2016-05-22T14:47:55.848222000 0.488161s notice: Listening for intracluster connections on port 29015
+2016-05-22T14:47:55.849738000 0.489677s notice: Listening for client driver connections on port 28015
+2016-05-22T14:47:55.849984000 0.489923s notice: Listening for administrative HTTP connections on port 8080
+2016-05-22T14:47:55.849986000 0.489925s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-05-22T14:47:55.849994000 0.489933s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-05-22T14:47:55.849995000 0.489934s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-05-22T14:47:55.849998000 0.489937s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-05-22T14:47:55.850001000 0.489940s notice: Server ready, "Vishnus_MacBook_Pro_local_ql2" 735eb166-6812-46e8-aabf-62907fd73573
+2016-05-22T14:47:58.699045000 3.339105s notice: A newer version of the RethinkDB server is available: 2.3.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-05-22T14:51:46.222686000 230.870459s info: Table 438b6633-588d-48d7-99d9-24c9b0674da6: Starting a new Raft election for term 1.
+2016-05-22T14:51:46.225003000 230.872776s info: Table 438b6633-588d-48d7-99d9-24c9b0674da6: Added replica on this server.
+2016-05-22T14:51:46.239913000 230.887687s info: Table 438b6633-588d-48d7-99d9-24c9b0674da6: This server is Raft leader for term 1. Latest log index is 0.
+2016-05-22T14:58:27.999446000 632.660878s notice: Server got SIGINT from pid 277, uid 501; shutting down...
+2016-05-22T14:58:28.000201000 632.661632s notice: Shutting down client connections...
+2016-05-22T14:58:28.008363000 632.669794s notice: All client connections closed.
+2016-05-22T14:58:28.008401000 632.669831s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-05-22T14:58:28.027967000 632.689398s notice: Storage engine shut down.
+2016-05-22T14:58:30.276923000 0.270408s notice: Running rethinkdb 2.3.1 (CLANG 7.3.0 (clang-703.0.29))...
+2016-05-22T14:58:30.287380000 0.280884s notice: Running on Darwin 15.4.0 x86_64
+2016-05-22T14:58:30.287544000 0.281021s notice: Loading data from directory /Users/batnu/Documents/Personal Projects/MWTS/mwts-server/rethinkdb_data
+2016-05-22T14:58:30.350842000 0.344319s info: Automatically using cache size of 104 MB
+2016-05-22T14:58:30.354365000 0.347842s notice: Listening for intracluster connections on port 29015
+2016-05-22T14:58:30.394011000 0.387488s notice: Listening for client driver connections on port 28015
+2016-05-22T14:58:30.394447000 0.387923s notice: Listening for administrative HTTP connections on port 8080
+2016-05-22T14:58:30.394454000 0.387929s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-05-22T14:58:30.394456000 0.387932s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-05-22T14:58:30.394459000 0.387934s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-05-22T14:58:30.394483000 0.387983s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-05-22T14:58:30.394518000 0.387994s notice: Server ready, "Vishnus_MacBook_Pro_local_ql2" 735eb166-6812-46e8-aabf-62907fd73573
+2016-05-22T14:58:31.881621000 1.875159s notice: A newer version of the RethinkDB server is available: 2.3.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-05-22T14:58:32.136676000 2.130214s info: Table 438b6633-588d-48d7-99d9-24c9b0674da6: Starting a new Raft election for term 2.
+2016-05-22T14:58:32.156134000 2.149671s info: Table 438b6633-588d-48d7-99d9-24c9b0674da6: This server is Raft leader for term 2. Latest log index is 2.
