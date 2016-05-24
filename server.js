@@ -54,42 +54,11 @@ passport.deserializeUser(function(id, done) {
   })
 })
 
-app.use(passport.initialize())
-app.use(passport.session())
 app.use(require('body-parser').urlencoded({ extended: true }));
 app.use(require('cookie-parser')());
 app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
-
-function loggedIn (rurl) {
-  return function(req, res, next) {
-    if(!req.session.passport || !req.session.passport.user) {
-      console.log(req.session.passport)
-      res.redirect(rurl)
-    }
-    else {
-      next()
-    }
-  }
-}
-
-app.use('/profile', loggedIn('/auth/facebook'))
-
-
-
-app.get('/', function(req, res) {
-  r.table('users').run()
-  .then(function(result) {
-    res.send(req.isAuthenticated)
-  })
-  .error(function(err) {
-    console.log(err)
-  })
-})
-
-app.get('/profile', function(req, res) {
-  res.send(req.session.passport.user)
-  console.log(req)
-})
+app.use(passport.initialize())
+app.use(passport.session())
 
 app.get('/logout', function(req, res){
   req.logout()
