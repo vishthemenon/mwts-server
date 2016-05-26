@@ -54,16 +54,18 @@ passport.deserializeUser(function(id, done) {
   })
 })
 
-app.use(require('body-parser').urlencoded({ extended: true }));
-app.use(require('cookie-parser')());
-app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
+app.use(require('morgan')('dev'))
+app.use(require('body-parser').urlencoded({ extended: true }))
+app.use(require('body-parser').json())
+app.use(require('cookie-parser')())
+app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }))
 app.use(passport.initialize())
 app.use(passport.session())
 
 app.get('/logout', function(req, res){
   req.logout()
   res.send("Logged Out")
-});
+})
 
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email']}))
 app.get('/auth/facebook/callback', passport.authenticate('facebook', { successRedirect: '/profile', failureRedirect: '/' }))
